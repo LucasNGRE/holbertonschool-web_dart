@@ -22,4 +22,9 @@ class Password {
 
     return hasUppercase && hasLowercase && hasNumber;
   }
+
+  @override
+  String toString() {
+    return "Your Password is: ${_password ?? ""}";
+  }
 }
